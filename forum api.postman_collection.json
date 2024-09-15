@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "e0163389-2680-4dc7-bdc0-e4efdaa73383",
+		"name": "forum api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29787497"
+	},
+	"item": [
+		{
+			"name": "forum",
+			"item": [
+				{
+					"name": "Post forum",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get forum",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/forum/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"forum",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
