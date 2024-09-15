@@ -14,7 +14,8 @@ Git (optionnel)
 # Cloner le projet (si applicable)
 Si vous avez un dépôt Git, utilisez la commande suivante pour cloner le projet :
 
-- git clone https://github.com/HienDaryRonsard/projet_forums.git
+- git clone https://github.com/diarrasoubaibra/ADA_API_G7.git
+
 si vous avez creer un dossier pour pouvoir mettre le projet dedans alors utiliser la commande ci dessous pour naviguer a l'interrieur du projet 
 - cd NomDossier
 
