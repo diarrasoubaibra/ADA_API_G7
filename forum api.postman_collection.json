@@ -7,18 +7,41 @@
 	},
 	"item": [
 		{
-			"name": "forum",
+			"name": "forums",
 			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Get forum",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
 				{
 					"name": "Post forum",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/forum/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"forum",
+								""
+							]
+						}
 					},
 					"response": []
 				},
 				{
-					"name": "Get forum",
+					"name": "Get forum list",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -35,6 +58,152 @@
 							"path": [
 								"api",
 								"forum",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sujets",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Get subject",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/subject/3",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"subject",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Post subject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Nouveau Sujet 3\",\r\n    \"forum\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/subject/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"subject",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get subject list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/subject/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"subject",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "messages",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Get message",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/subject/3",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"subject",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Post  message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\": \"Ceci est un nouveau message 2\",\r\n    \"subjecct\": 1,\r\n    \"created_at\": \"date_2\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/message/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"message",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get message list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/message/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"message",
 								""
 							]
 						}
