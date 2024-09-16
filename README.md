@@ -61,10 +61,13 @@ DATABASES = {
 Après avoir configuré la base de données, appliquez les migrations pour créer les tables nécessaires.
 
 -python manage.py makemigrations
+
+ensuite entrer cette commande
+
 -python manage.py migrate
 
 # Lancer le serveur de développement
 Exécutez le serveur de développement pour démarrer l'API.
 - python manage.py runserver
 
-Vous pouvez maintenant accéder à l'API à l'adresse http://localhost:8000.
+Vous pouvez maintenant accéder à l'API à l'adresse (https://documenter.getpostman.com/view/29787497/2sAXqp94CX).
