@@ -61,6 +61,9 @@ DATABASES = {
 Après avoir configuré la base de données, appliquez les migrations pour créer les tables nécessaires.
 
 -python manage.py makemigrations
+
+ensuite entrer cette commande
+
 -python manage.py migrate
 
 # Lancer le serveur de développement
