@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     #customer app
     'forum.apps.ForumConfig',
     'rest_framework',
+    'base.apps.BaseConfig',
 ]
 
 MIDDLEWARE = [
@@ -82,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'metab_db',
         'USER': 'postgres',
-        'PASSWORD': 'admin',
+        'PASSWORD': 'Sql',
         'HOST': 'localhost',
         'PORT': '5432',
     }

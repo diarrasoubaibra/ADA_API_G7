@@ -1,6 +1,8 @@
 from django.db import models
+from base.models.helpers.date_time_model import DateTimeModel
 
-class ForumModel(models.Model):
+
+class ForumModel(DateTimeModel):
     name = models.CharField(max_length=100)
     description = models.TextField()
 
